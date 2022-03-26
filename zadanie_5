@@ -1,0 +1,22 @@
+package com.company;
+import java.util.Date;
+import java.time.Instant;
+public class Main {
+
+    public static void main(String[] args) {
+
+
+
+
+                Date now = new Date();
+                System.out.println("Current Date in milliseconds is :" + now.getTime());
+
+
+
+
+        Instant instant = Instant.now();
+
+        System.out.println(instant);
+
+    }
+        }
