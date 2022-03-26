@@ -1,0 +1,25 @@
+import java.util.zip.CRC32;
+import java.util.zip.Checksum;
+
+public class CalculateCRC32ChecksumForByteArray {
+
+    public static void main(String[] args) {
+
+        String input = "WSEI";
+
+
+        byte bytes[] = input.getBytes();
+
+        Checksum checksum = new CRC32();
+
+
+        checksum.update(bytes, 0, bytes.length);
+
+
+        long checksumValue = checksum.getValue();
+
+        System.out.println("CRC32 checksum for input string is: " + checksumValue);
+
+    }
+
+}
